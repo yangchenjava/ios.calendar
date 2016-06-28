@@ -1,0 +1,955 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C2FABFE3DE63C4CBDE5BC8B /* Pods_ios_calendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C25E4E6CBE69A6F4A8FC503 /* Pods_ios_calendar.framework */; };
+		0F51C2F61D1BD0B300BC917F /* YCDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F51C2F51D1BD0B300BC917F /* YCDayViewController.m */; };
+		0F51C2FC1D1BE87C00BC917F /* YCMonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F51C2FB1D1BE87C00BC917F /* YCMonthViewController.m */; };
+		0F51C2FF1D1C12AB00BC917F /* YCDayItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F51C2FE1D1C12AB00BC917F /* YCDayItemView.m */; };
+		0FE3F3A21D1D064C001E5D24 /* YCDayItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FE3F3A11D1D064C001E5D24 /* YCDayItemView.xib */; };
+		0FE3F3A51D1D3627001E5D24 /* YCMonthItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3F3A41D1D3627001E5D24 /* YCMonthItemView.m */; };
+		0FE3F3A71D1E2A54001E5D24 /* YCMonthItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FE3F3A61D1E2A54001E5D24 /* YCMonthItemView.xib */; };
+		0FE3F3AB1D20DE6C001E5D24 /* YCTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3F3AA1D20DE6C001E5D24 /* YCTitleButton.m */; };
+		0FE3F3AE1D2119CC001E5D24 /* YCScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3F3AD1D2119CC001E5D24 /* YCScrollView.m */; };
+		0FE3F3B11D212F3C001E5D24 /* YCDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3F3B01D212F3C001E5D24 /* YCDatePicker.m */; };
+		0FE3F3B91D2163F4001E5D24 /* YCAlertControllerBiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3F3B81D2163F4001E5D24 /* YCAlertControllerBiz.m */; };
+		0FE3F3BC1D2217D1001E5D24 /* YCMonthPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3F3BB1D2217D1001E5D24 /* YCMonthPicker.m */; };
+		0FF7A50B1D1A7CB500B846E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF7A50A1D1A7CB500B846E4 /* Assets.xcassets */; };
+		0FF7A5191D1A7CB600B846E4 /* ios_calendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A5181D1A7CB600B846E4 /* ios_calendarTests.m */; };
+		0FF7A5241D1A7CB600B846E4 /* ios_calendarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A5231D1A7CB600B846E4 /* ios_calendarUITests.m */; };
+		0FF7A55E1D1ADBF600B846E4 /* NSMutableArray+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A53A1D1ADBF600B846E4 /* NSMutableArray+Category.m */; };
+		0FF7A55F1D1ADBF600B846E4 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A53C1D1ADBF600B846E4 /* NSString+Category.m */; };
+		0FF7A5601D1ADBF600B846E4 /* UIBarButtonItem+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A53F1D1ADBF600B846E4 /* UIBarButtonItem+Category.m */; };
+		0FF7A5611D1ADBF600B846E4 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A5411D1ADBF600B846E4 /* UIImage+Category.m */; };
+		0FF7A5621D1ADBF600B846E4 /* UITextField+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A5431D1ADBF600B846E4 /* UITextField+Category.m */; };
+		0FF7A5631D1ADBF600B846E4 /* UITextViewWithPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A5451D1ADBF600B846E4 /* UITextViewWithPlaceholder.m */; };
+		0FF7A5641D1ADBF600B846E4 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A5471D1ADBF600B846E4 /* UIView+Category.m */; };
+		0FF7A5651D1ADBF600B846E4 /* MTLJSONAdapterWithoutNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A54B1D1ADBF600B846E4 /* MTLJSONAdapterWithoutNil.m */; };
+		0FF7A5661D1ADBF600B846E4 /* MBProgressHUD+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A54E1D1ADBF600B846E4 /* MBProgressHUD+Category.m */; };
+		0FF7A5671D1ADBF600B846E4 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0FF7A54F1D1ADBF600B846E4 /* MBProgressHUD.bundle */; };
+		0FF7A5681D1ADBF600B846E4 /* UIImageView+SDWebImageCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A5521D1ADBF600B846E4 /* UIImageView+SDWebImageCategory.m */; };
+		0FF7A5691D1ADBF600B846E4 /* YCHttpUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A5551D1ADBF600B846E4 /* YCHttpUtils.m */; };
+		0FF7A56A1D1ADBF600B846E4 /* YCNumberUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A5571D1ADBF600B846E4 /* YCNumberUtils.m */; };
+		0FF7A56B1D1ADBF600B846E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A55B1D1ADBF600B846E4 /* AppDelegate.m */; };
+		0FF7A56C1D1ADBF600B846E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A55C1D1ADBF600B846E4 /* main.m */; };
+		0FF7A5701D1B89C900B846E4 /* YCChineseCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A56F1D1B89C900B846E4 /* YCChineseCalendar.m */; };
+		0FF7A57A1D1B997200B846E4 /* YCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A5791D1B997200B846E4 /* YCTabBarController.m */; };
+		0FF7A5821D1B9B1600B846E4 /* YCBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A57D1D1B9B1600B846E4 /* YCBadgeButton.m */; };
+		0FF7A5831D1B9B1600B846E4 /* YCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A57F1D1B9B1600B846E4 /* YCTabBar.m */; };
+		0FF7A5841D1B9B1600B846E4 /* YCTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A5811D1B9B1600B846E4 /* YCTabBarButton.m */; };
+		0FF7A5871D1BB1FB00B846E4 /* YCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A5861D1BB1FB00B846E4 /* YCNavigationController.m */; };
+		0FF7A58A1D1BC4E200B846E4 /* YCDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A5891D1BC4E200B846E4 /* YCDayModel.m */; };
+		0FF7A58D1D1BC51300B846E4 /* YCMonthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A58C1D1BC51300B846E4 /* YCMonthModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FF7A5151D1A7CB600B846E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FF7A4F31D1A7CB500B846E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FF7A4FA1D1A7CB500B846E4;
+			remoteInfo = ios.calendar;
+		};
+		0FF7A5201D1A7CB600B846E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FF7A4F31D1A7CB500B846E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FF7A4FA1D1A7CB500B846E4;
+			remoteInfo = ios.calendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F51C2F41D1BD0B300BC917F /* YCDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCDayViewController.h; sourceTree = "<group>"; };
+		0F51C2F51D1BD0B300BC917F /* YCDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCDayViewController.m; sourceTree = "<group>"; };
+		0F51C2FA1D1BE87C00BC917F /* YCMonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMonthViewController.h; sourceTree = "<group>"; };
+		0F51C2FB1D1BE87C00BC917F /* YCMonthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMonthViewController.m; sourceTree = "<group>"; };
+		0F51C2FD1D1C12AB00BC917F /* YCDayItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCDayItemView.h; sourceTree = "<group>"; };
+		0F51C2FE1D1C12AB00BC917F /* YCDayItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCDayItemView.m; sourceTree = "<group>"; };
+		0FE3F3A11D1D064C001E5D24 /* YCDayItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCDayItemView.xib; sourceTree = "<group>"; };
+		0FE3F3A31D1D3627001E5D24 /* YCMonthItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMonthItemView.h; sourceTree = "<group>"; };
+		0FE3F3A41D1D3627001E5D24 /* YCMonthItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMonthItemView.m; sourceTree = "<group>"; };
+		0FE3F3A61D1E2A54001E5D24 /* YCMonthItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCMonthItemView.xib; sourceTree = "<group>"; };
+		0FE3F3A91D20DE6C001E5D24 /* YCTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCTitleButton.h; sourceTree = "<group>"; };
+		0FE3F3AA1D20DE6C001E5D24 /* YCTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCTitleButton.m; sourceTree = "<group>"; };
+		0FE3F3AC1D2119CC001E5D24 /* YCScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCScrollView.h; sourceTree = "<group>"; };
+		0FE3F3AD1D2119CC001E5D24 /* YCScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCScrollView.m; sourceTree = "<group>"; };
+		0FE3F3AF1D212F3C001E5D24 /* YCDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCDatePicker.h; sourceTree = "<group>"; };
+		0FE3F3B01D212F3C001E5D24 /* YCDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCDatePicker.m; sourceTree = "<group>"; };
+		0FE3F3B71D2163F4001E5D24 /* YCAlertControllerBiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCAlertControllerBiz.h; sourceTree = "<group>"; };
+		0FE3F3B81D2163F4001E5D24 /* YCAlertControllerBiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCAlertControllerBiz.m; sourceTree = "<group>"; };
+		0FE3F3BA1D2217D1001E5D24 /* YCMonthPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMonthPicker.h; sourceTree = "<group>"; };
+		0FE3F3BB1D2217D1001E5D24 /* YCMonthPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMonthPicker.m; sourceTree = "<group>"; };
+		0FF7A4FB1D1A7CB500B846E4 /* ios.calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FF7A50A1D1A7CB500B846E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FF7A50F1D1A7CB500B846E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FF7A5141D1A7CB600B846E4 /* ios.calendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios.calendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FF7A5181D1A7CB600B846E4 /* ios_calendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_calendarTests.m; sourceTree = "<group>"; };
+		0FF7A51A1D1A7CB600B846E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FF7A51F1D1A7CB600B846E4 /* ios.calendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios.calendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FF7A5231D1A7CB600B846E4 /* ios_calendarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_calendarUITests.m; sourceTree = "<group>"; };
+		0FF7A5251D1A7CB600B846E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FF7A5391D1ADBF600B846E4 /* NSMutableArray+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Category.h"; sourceTree = "<group>"; };
+		0FF7A53A1D1ADBF600B846E4 /* NSMutableArray+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Category.m"; sourceTree = "<group>"; };
+		0FF7A53B1D1ADBF600B846E4 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		0FF7A53C1D1ADBF600B846E4 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		0FF7A53E1D1ADBF600B846E4 /* UIBarButtonItem+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Category.h"; sourceTree = "<group>"; };
+		0FF7A53F1D1ADBF600B846E4 /* UIBarButtonItem+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Category.m"; sourceTree = "<group>"; };
+		0FF7A5401D1ADBF600B846E4 /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
+		0FF7A5411D1ADBF600B846E4 /* UIImage+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
+		0FF7A5421D1ADBF600B846E4 /* UITextField+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Category.h"; sourceTree = "<group>"; };
+		0FF7A5431D1ADBF600B846E4 /* UITextField+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Category.m"; sourceTree = "<group>"; };
+		0FF7A5441D1ADBF600B846E4 /* UITextViewWithPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewWithPlaceholder.h; sourceTree = "<group>"; };
+		0FF7A5451D1ADBF600B846E4 /* UITextViewWithPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewWithPlaceholder.m; sourceTree = "<group>"; };
+		0FF7A5461D1ADBF600B846E4 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		0FF7A5471D1ADBF600B846E4 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		0FF7A54A1D1ADBF600B846E4 /* MTLJSONAdapterWithoutNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLJSONAdapterWithoutNil.h; sourceTree = "<group>"; };
+		0FF7A54B1D1ADBF600B846E4 /* MTLJSONAdapterWithoutNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLJSONAdapterWithoutNil.m; sourceTree = "<group>"; };
+		0FF7A54D1D1ADBF600B846E4 /* MBProgressHUD+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Category.h"; sourceTree = "<group>"; };
+		0FF7A54E1D1ADBF600B846E4 /* MBProgressHUD+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Category.m"; sourceTree = "<group>"; };
+		0FF7A54F1D1ADBF600B846E4 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		0FF7A5511D1ADBF600B846E4 /* UIImageView+SDWebImageCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImageCategory.h"; sourceTree = "<group>"; };
+		0FF7A5521D1ADBF600B846E4 /* UIImageView+SDWebImageCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImageCategory.m"; sourceTree = "<group>"; };
+		0FF7A5541D1ADBF600B846E4 /* YCHttpUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCHttpUtils.h; sourceTree = "<group>"; };
+		0FF7A5551D1ADBF600B846E4 /* YCHttpUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCHttpUtils.m; sourceTree = "<group>"; };
+		0FF7A5561D1ADBF600B846E4 /* YCNumberUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCNumberUtils.h; sourceTree = "<group>"; };
+		0FF7A5571D1ADBF600B846E4 /* YCNumberUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCNumberUtils.m; sourceTree = "<group>"; };
+		0FF7A55A1D1ADBF600B846E4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0FF7A55B1D1ADBF600B846E4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0FF7A55C1D1ADBF600B846E4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FF7A56D1D1B794B00B846E4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0FF7A56E1D1B89C900B846E4 /* YCChineseCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCChineseCalendar.h; sourceTree = "<group>"; };
+		0FF7A56F1D1B89C900B846E4 /* YCChineseCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCChineseCalendar.m; sourceTree = "<group>"; };
+		0FF7A5781D1B997200B846E4 /* YCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCTabBarController.h; sourceTree = "<group>"; };
+		0FF7A5791D1B997200B846E4 /* YCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCTabBarController.m; sourceTree = "<group>"; };
+		0FF7A57C1D1B9B1600B846E4 /* YCBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCBadgeButton.h; sourceTree = "<group>"; };
+		0FF7A57D1D1B9B1600B846E4 /* YCBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCBadgeButton.m; sourceTree = "<group>"; };
+		0FF7A57E1D1B9B1600B846E4 /* YCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCTabBar.h; sourceTree = "<group>"; };
+		0FF7A57F1D1B9B1600B846E4 /* YCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCTabBar.m; sourceTree = "<group>"; };
+		0FF7A5801D1B9B1600B846E4 /* YCTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCTabBarButton.h; sourceTree = "<group>"; };
+		0FF7A5811D1B9B1600B846E4 /* YCTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCTabBarButton.m; sourceTree = "<group>"; };
+		0FF7A5851D1BB1FB00B846E4 /* YCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCNavigationController.h; sourceTree = "<group>"; };
+		0FF7A5861D1BB1FB00B846E4 /* YCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCNavigationController.m; sourceTree = "<group>"; };
+		0FF7A5881D1BC4E200B846E4 /* YCDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCDayModel.h; sourceTree = "<group>"; };
+		0FF7A5891D1BC4E200B846E4 /* YCDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCDayModel.m; sourceTree = "<group>"; };
+		0FF7A58B1D1BC51300B846E4 /* YCMonthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMonthModel.h; sourceTree = "<group>"; };
+		0FF7A58C1D1BC51300B846E4 /* YCMonthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMonthModel.m; sourceTree = "<group>"; };
+		6DCAB177F786660EFFFEF48D /* Pods-ios.calendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.calendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios.calendar/Pods-ios.calendar.debug.xcconfig"; sourceTree = "<group>"; };
+		9C25E4E6CBE69A6F4A8FC503 /* Pods_ios_calendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_calendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D744AB158B208E8210B569CB /* Pods-ios.calendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.calendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios.calendar/Pods-ios.calendar.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FF7A4F81D1A7CB500B846E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2FABFE3DE63C4CBDE5BC8B /* Pods_ios_calendar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FF7A5111D1A7CB600B846E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FF7A51C1D1A7CB600B846E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FE3F3A81D1FB4D5001E5D24 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0FE3F3A91D20DE6C001E5D24 /* YCTitleButton.h */,
+				0FE3F3AA1D20DE6C001E5D24 /* YCTitleButton.m */,
+				0FE3F3AC1D2119CC001E5D24 /* YCScrollView.h */,
+				0FE3F3AD1D2119CC001E5D24 /* YCScrollView.m */,
+				0FE3F3AF1D212F3C001E5D24 /* YCDatePicker.h */,
+				0FE3F3B01D212F3C001E5D24 /* YCDatePicker.m */,
+				0FE3F3BA1D2217D1001E5D24 /* YCMonthPicker.h */,
+				0FE3F3BB1D2217D1001E5D24 /* YCMonthPicker.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0FE3F3B61D216394001E5D24 /* Biz */ = {
+			isa = PBXGroup;
+			children = (
+				0FE3F3B71D2163F4001E5D24 /* YCAlertControllerBiz.h */,
+				0FE3F3B81D2163F4001E5D24 /* YCAlertControllerBiz.m */,
+			);
+			path = Biz;
+			sourceTree = "<group>";
+		};
+		0FF7A4F21D1A7CB500B846E4 = {
+			isa = PBXGroup;
+			children = (
+				0FF7A4FD1D1A7CB500B846E4 /* ios.calendar */,
+				0FF7A5171D1A7CB600B846E4 /* ios.calendarTests */,
+				0FF7A5221D1A7CB600B846E4 /* ios.calendarUITests */,
+				0FF7A4FC1D1A7CB500B846E4 /* Products */,
+				C14702743B1527DE103DE371 /* Pods */,
+				D217F346769B1F073835FE05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0FF7A4FC1D1A7CB500B846E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A4FB1D1A7CB500B846E4 /* ios.calendar.app */,
+				0FF7A5141D1A7CB600B846E4 /* ios.calendarTests.xctest */,
+				0FF7A51F1D1A7CB600B846E4 /* ios.calendarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FF7A4FD1D1A7CB500B846E4 /* ios.calendar */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A5331D1ADBF600B846E4 /* Classes */,
+				0FF7A4FE1D1A7CB500B846E4 /* Supporting Files */,
+			);
+			path = ios.calendar;
+			sourceTree = "<group>";
+		};
+		0FF7A4FE1D1A7CB500B846E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A50A1D1A7CB500B846E4 /* Assets.xcassets */,
+				0FF7A50F1D1A7CB500B846E4 /* Info.plist */,
+				0FF7A56D1D1B794B00B846E4 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FF7A5171D1A7CB600B846E4 /* ios.calendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A5181D1A7CB600B846E4 /* ios_calendarTests.m */,
+				0FF7A51A1D1A7CB600B846E4 /* Info.plist */,
+			);
+			path = ios.calendarTests;
+			sourceTree = "<group>";
+		};
+		0FF7A5221D1A7CB600B846E4 /* ios.calendarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A5231D1A7CB600B846E4 /* ios_calendarUITests.m */,
+				0FF7A5251D1A7CB600B846E4 /* Info.plist */,
+			);
+			path = ios.calendarUITests;
+			sourceTree = "<group>";
+		};
+		0FF7A5331D1ADBF600B846E4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A5581D1ADBF600B846E4 /* Model */,
+				0FF7A55D1D1ADBF600B846E4 /* View */,
+				0FF7A5351D1ADBF600B846E4 /* Controller */,
+				0FE3F3B61D216394001E5D24 /* Biz */,
+				0FF7A5361D1ADBF600B846E4 /* HelpKit */,
+				0FF7A5591D1ADBF600B846E4 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0FF7A5351D1ADBF600B846E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A5761D1B8A8700B846E4 /* Main */,
+				0FF7A5751D1B8A8700B846E4 /* Day */,
+				0FF7A5771D1B8A8700B846E4 /* Month */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0FF7A5361D1ADBF600B846E4 /* HelpKit */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A5371D1ADBF600B846E4 /* Category */,
+				0FF7A5481D1ADBF600B846E4 /* Lib */,
+				0FF7A5531D1ADBF600B846E4 /* Utils */,
+			);
+			path = HelpKit;
+			sourceTree = "<group>";
+		};
+		0FF7A5371D1ADBF600B846E4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A5381D1ADBF600B846E4 /* Foundation */,
+				0FF7A53D1D1ADBF600B846E4 /* UIKit */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0FF7A5381D1ADBF600B846E4 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A5391D1ADBF600B846E4 /* NSMutableArray+Category.h */,
+				0FF7A53A1D1ADBF600B846E4 /* NSMutableArray+Category.m */,
+				0FF7A53B1D1ADBF600B846E4 /* NSString+Category.h */,
+				0FF7A53C1D1ADBF600B846E4 /* NSString+Category.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		0FF7A53D1D1ADBF600B846E4 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A53E1D1ADBF600B846E4 /* UIBarButtonItem+Category.h */,
+				0FF7A53F1D1ADBF600B846E4 /* UIBarButtonItem+Category.m */,
+				0FF7A5401D1ADBF600B846E4 /* UIImage+Category.h */,
+				0FF7A5411D1ADBF600B846E4 /* UIImage+Category.m */,
+				0FF7A5421D1ADBF600B846E4 /* UITextField+Category.h */,
+				0FF7A5431D1ADBF600B846E4 /* UITextField+Category.m */,
+				0FF7A5441D1ADBF600B846E4 /* UITextViewWithPlaceholder.h */,
+				0FF7A5451D1ADBF600B846E4 /* UITextViewWithPlaceholder.m */,
+				0FF7A5461D1ADBF600B846E4 /* UIView+Category.h */,
+				0FF7A5471D1ADBF600B846E4 /* UIView+Category.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		0FF7A5481D1ADBF600B846E4 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A5491D1ADBF600B846E4 /* Mantle */,
+				0FF7A54C1D1ADBF600B846E4 /* MBProgressHUD */,
+				0FF7A5501D1ADBF600B846E4 /* SDWebImage */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		0FF7A5491D1ADBF600B846E4 /* Mantle */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A54A1D1ADBF600B846E4 /* MTLJSONAdapterWithoutNil.h */,
+				0FF7A54B1D1ADBF600B846E4 /* MTLJSONAdapterWithoutNil.m */,
+			);
+			path = Mantle;
+			sourceTree = "<group>";
+		};
+		0FF7A54C1D1ADBF600B846E4 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A54D1D1ADBF600B846E4 /* MBProgressHUD+Category.h */,
+				0FF7A54E1D1ADBF600B846E4 /* MBProgressHUD+Category.m */,
+				0FF7A54F1D1ADBF600B846E4 /* MBProgressHUD.bundle */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		0FF7A5501D1ADBF600B846E4 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A5511D1ADBF600B846E4 /* UIImageView+SDWebImageCategory.h */,
+				0FF7A5521D1ADBF600B846E4 /* UIImageView+SDWebImageCategory.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		0FF7A5531D1ADBF600B846E4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A5541D1ADBF600B846E4 /* YCHttpUtils.h */,
+				0FF7A5551D1ADBF600B846E4 /* YCHttpUtils.m */,
+				0FF7A5561D1ADBF600B846E4 /* YCNumberUtils.h */,
+				0FF7A5571D1ADBF600B846E4 /* YCNumberUtils.m */,
+				0FF7A56E1D1B89C900B846E4 /* YCChineseCalendar.h */,
+				0FF7A56F1D1B89C900B846E4 /* YCChineseCalendar.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0FF7A5581D1ADBF600B846E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A5711D1B8A6B00B846E4 /* Day */,
+				0FF7A5721D1B8A6B00B846E4 /* Month */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0FF7A5591D1ADBF600B846E4 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A55A1D1ADBF600B846E4 /* AppDelegate.h */,
+				0FF7A55B1D1ADBF600B846E4 /* AppDelegate.m */,
+				0FF7A55C1D1ADBF600B846E4 /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		0FF7A55D1D1ADBF600B846E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A57B1D1B9B1600B846E4 /* Main */,
+				0FE3F3A81D1FB4D5001E5D24 /* Common */,
+				0FF7A5731D1B8A7700B846E4 /* Day */,
+				0FF7A5741D1B8A7700B846E4 /* Month */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FF7A5711D1B8A6B00B846E4 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A5881D1BC4E200B846E4 /* YCDayModel.h */,
+				0FF7A5891D1BC4E200B846E4 /* YCDayModel.m */,
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
+		0FF7A5721D1B8A6B00B846E4 /* Month */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A58B1D1BC51300B846E4 /* YCMonthModel.h */,
+				0FF7A58C1D1BC51300B846E4 /* YCMonthModel.m */,
+			);
+			path = Month;
+			sourceTree = "<group>";
+		};
+		0FF7A5731D1B8A7700B846E4 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				0F51C2FD1D1C12AB00BC917F /* YCDayItemView.h */,
+				0F51C2FE1D1C12AB00BC917F /* YCDayItemView.m */,
+				0FE3F3A11D1D064C001E5D24 /* YCDayItemView.xib */,
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
+		0FF7A5741D1B8A7700B846E4 /* Month */ = {
+			isa = PBXGroup;
+			children = (
+				0FE3F3A31D1D3627001E5D24 /* YCMonthItemView.h */,
+				0FE3F3A41D1D3627001E5D24 /* YCMonthItemView.m */,
+				0FE3F3A61D1E2A54001E5D24 /* YCMonthItemView.xib */,
+			);
+			path = Month;
+			sourceTree = "<group>";
+		};
+		0FF7A5751D1B8A8700B846E4 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				0F51C2F41D1BD0B300BC917F /* YCDayViewController.h */,
+				0F51C2F51D1BD0B300BC917F /* YCDayViewController.m */,
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
+		0FF7A5761D1B8A8700B846E4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A5781D1B997200B846E4 /* YCTabBarController.h */,
+				0FF7A5791D1B997200B846E4 /* YCTabBarController.m */,
+				0FF7A5851D1BB1FB00B846E4 /* YCNavigationController.h */,
+				0FF7A5861D1BB1FB00B846E4 /* YCNavigationController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0FF7A5771D1B8A8700B846E4 /* Month */ = {
+			isa = PBXGroup;
+			children = (
+				0F51C2FA1D1BE87C00BC917F /* YCMonthViewController.h */,
+				0F51C2FB1D1BE87C00BC917F /* YCMonthViewController.m */,
+			);
+			path = Month;
+			sourceTree = "<group>";
+		};
+		0FF7A57B1D1B9B1600B846E4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0FF7A57C1D1B9B1600B846E4 /* YCBadgeButton.h */,
+				0FF7A57D1D1B9B1600B846E4 /* YCBadgeButton.m */,
+				0FF7A57E1D1B9B1600B846E4 /* YCTabBar.h */,
+				0FF7A57F1D1B9B1600B846E4 /* YCTabBar.m */,
+				0FF7A5801D1B9B1600B846E4 /* YCTabBarButton.h */,
+				0FF7A5811D1B9B1600B846E4 /* YCTabBarButton.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C14702743B1527DE103DE371 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DCAB177F786660EFFFEF48D /* Pods-ios.calendar.debug.xcconfig */,
+				D744AB158B208E8210B569CB /* Pods-ios.calendar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D217F346769B1F073835FE05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C25E4E6CBE69A6F4A8FC503 /* Pods_ios_calendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FF7A4FA1D1A7CB500B846E4 /* ios.calendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FF7A5281D1A7CB600B846E4 /* Build configuration list for PBXNativeTarget "ios.calendar" */;
+			buildPhases = (
+				2F5FE0DCEF45757E8583CD74 /* [CP] Check Pods Manifest.lock */,
+				0FF7A4F71D1A7CB500B846E4 /* Sources */,
+				0FF7A4F81D1A7CB500B846E4 /* Frameworks */,
+				0FF7A4F91D1A7CB500B846E4 /* Resources */,
+				4D6F4936F8B7EA40786FD3DC /* [CP] Embed Pods Frameworks */,
+				72119B17BA36B30B47F312F0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ios.calendar;
+			productName = ios.calendar;
+			productReference = 0FF7A4FB1D1A7CB500B846E4 /* ios.calendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FF7A5131D1A7CB600B846E4 /* ios.calendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FF7A52B1D1A7CB600B846E4 /* Build configuration list for PBXNativeTarget "ios.calendarTests" */;
+			buildPhases = (
+				0FF7A5101D1A7CB600B846E4 /* Sources */,
+				0FF7A5111D1A7CB600B846E4 /* Frameworks */,
+				0FF7A5121D1A7CB600B846E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FF7A5161D1A7CB600B846E4 /* PBXTargetDependency */,
+			);
+			name = ios.calendarTests;
+			productName = ios.calendarTests;
+			productReference = 0FF7A5141D1A7CB600B846E4 /* ios.calendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0FF7A51E1D1A7CB600B846E4 /* ios.calendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FF7A52E1D1A7CB600B846E4 /* Build configuration list for PBXNativeTarget "ios.calendarUITests" */;
+			buildPhases = (
+				0FF7A51B1D1A7CB600B846E4 /* Sources */,
+				0FF7A51C1D1A7CB600B846E4 /* Frameworks */,
+				0FF7A51D1D1A7CB600B846E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FF7A5211D1A7CB600B846E4 /* PBXTargetDependency */,
+			);
+			name = ios.calendarUITests;
+			productName = ios.calendarUITests;
+			productReference = 0FF7A51F1D1A7CB600B846E4 /* ios.calendarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FF7A4F31D1A7CB500B846E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = yangc;
+				TargetAttributes = {
+					0FF7A4FA1D1A7CB500B846E4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 53E348DHA3;
+					};
+					0FF7A5131D1A7CB600B846E4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0FF7A4FA1D1A7CB500B846E4;
+					};
+					0FF7A51E1D1A7CB600B846E4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0FF7A4FA1D1A7CB500B846E4;
+					};
+				};
+			};
+			buildConfigurationList = 0FF7A4F61D1A7CB500B846E4 /* Build configuration list for PBXProject "ios.calendar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FF7A4F21D1A7CB500B846E4;
+			productRefGroup = 0FF7A4FC1D1A7CB500B846E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FF7A4FA1D1A7CB500B846E4 /* ios.calendar */,
+				0FF7A5131D1A7CB600B846E4 /* ios.calendarTests */,
+				0FF7A51E1D1A7CB600B846E4 /* ios.calendarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FF7A4F91D1A7CB500B846E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE3F3A71D1E2A54001E5D24 /* YCMonthItemView.xib in Resources */,
+				0FF7A50B1D1A7CB500B846E4 /* Assets.xcassets in Resources */,
+				0FE3F3A21D1D064C001E5D24 /* YCDayItemView.xib in Resources */,
+				0FF7A5671D1ADBF600B846E4 /* MBProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FF7A5121D1A7CB600B846E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FF7A51D1D1A7CB600B846E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F5FE0DCEF45757E8583CD74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4D6F4936F8B7EA40786FD3DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios.calendar/Pods-ios.calendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72119B17BA36B30B47F312F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios.calendar/Pods-ios.calendar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FF7A4F71D1A7CB500B846E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE3F3BC1D2217D1001E5D24 /* YCMonthPicker.m in Sources */,
+				0FE3F3B11D212F3C001E5D24 /* YCDatePicker.m in Sources */,
+				0FF7A56A1D1ADBF600B846E4 /* YCNumberUtils.m in Sources */,
+				0FE3F3AB1D20DE6C001E5D24 /* YCTitleButton.m in Sources */,
+				0FF7A5691D1ADBF600B846E4 /* YCHttpUtils.m in Sources */,
+				0F51C2F61D1BD0B300BC917F /* YCDayViewController.m in Sources */,
+				0F51C2FC1D1BE87C00BC917F /* YCMonthViewController.m in Sources */,
+				0FF7A55E1D1ADBF600B846E4 /* NSMutableArray+Category.m in Sources */,
+				0FF7A5831D1B9B1600B846E4 /* YCTabBar.m in Sources */,
+				0FE3F3B91D2163F4001E5D24 /* YCAlertControllerBiz.m in Sources */,
+				0FE3F3A51D1D3627001E5D24 /* YCMonthItemView.m in Sources */,
+				0FF7A5641D1ADBF600B846E4 /* UIView+Category.m in Sources */,
+				0FF7A5631D1ADBF600B846E4 /* UITextViewWithPlaceholder.m in Sources */,
+				0FF7A5841D1B9B1600B846E4 /* YCTabBarButton.m in Sources */,
+				0FF7A5821D1B9B1600B846E4 /* YCBadgeButton.m in Sources */,
+				0F51C2FF1D1C12AB00BC917F /* YCDayItemView.m in Sources */,
+				0FF7A55F1D1ADBF600B846E4 /* NSString+Category.m in Sources */,
+				0FF7A5681D1ADBF600B846E4 /* UIImageView+SDWebImageCategory.m in Sources */,
+				0FF7A56B1D1ADBF600B846E4 /* AppDelegate.m in Sources */,
+				0FF7A5651D1ADBF600B846E4 /* MTLJSONAdapterWithoutNil.m in Sources */,
+				0FF7A5661D1ADBF600B846E4 /* MBProgressHUD+Category.m in Sources */,
+				0FF7A5601D1ADBF600B846E4 /* UIBarButtonItem+Category.m in Sources */,
+				0FF7A57A1D1B997200B846E4 /* YCTabBarController.m in Sources */,
+				0FF7A5871D1BB1FB00B846E4 /* YCNavigationController.m in Sources */,
+				0FF7A5701D1B89C900B846E4 /* YCChineseCalendar.m in Sources */,
+				0FF7A5621D1ADBF600B846E4 /* UITextField+Category.m in Sources */,
+				0FE3F3AE1D2119CC001E5D24 /* YCScrollView.m in Sources */,
+				0FF7A58A1D1BC4E200B846E4 /* YCDayModel.m in Sources */,
+				0FF7A56C1D1ADBF600B846E4 /* main.m in Sources */,
+				0FF7A58D1D1BC51300B846E4 /* YCMonthModel.m in Sources */,
+				0FF7A5611D1ADBF600B846E4 /* UIImage+Category.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FF7A5101D1A7CB600B846E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF7A5191D1A7CB600B846E4 /* ios_calendarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FF7A51B1D1A7CB600B846E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF7A5241D1A7CB600B846E4 /* ios_calendarUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FF7A5161D1A7CB600B846E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FF7A4FA1D1A7CB500B846E4 /* ios.calendar */;
+			targetProxy = 0FF7A5151D1A7CB600B846E4 /* PBXContainerItemProxy */;
+		};
+		0FF7A5211D1A7CB600B846E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FF7A4FA1D1A7CB500B846E4 /* ios.calendar */;
+			targetProxy = 0FF7A5201D1A7CB600B846E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FF7A5261D1A7CB600B846E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0FF7A5271D1A7CB600B846E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FF7A5291D1A7CB600B846E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DCAB177F786660EFFFEF48D /* Pods-ios.calendar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: yangchen_java@126.com (ALY5YFL2YA)";
+				GCC_PREFIX_HEADER = "${SRCROOT}/ios.calendar/PrefixHeader.pch";
+				INFOPLIST_FILE = ios.calendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangc.ios-calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8285e48b-51af-4e14-884e-d4054ff200c6";
+			};
+			name = Debug;
+		};
+		0FF7A52A1D1A7CB600B846E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D744AB158B208E8210B569CB /* Pods-ios.calendar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: yangchen_java@126.com (ALY5YFL2YA)";
+				GCC_PREFIX_HEADER = "${SRCROOT}/ios.calendar/PrefixHeader.pch";
+				INFOPLIST_FILE = ios.calendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangc.ios-calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8285e48b-51af-4e14-884e-d4054ff200c6";
+			};
+			name = Release;
+		};
+		0FF7A52C1D1A7CB600B846E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ios.calendarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangc.ios-calendarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios.calendar.app/ios.calendar";
+			};
+			name = Debug;
+		};
+		0FF7A52D1D1A7CB600B846E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ios.calendarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangc.ios-calendarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios.calendar.app/ios.calendar";
+			};
+			name = Release;
+		};
+		0FF7A52F1D1A7CB600B846E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ios.calendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangc.ios-calendarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ios.calendar;
+			};
+			name = Debug;
+		};
+		0FF7A5301D1A7CB600B846E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ios.calendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangc.ios-calendarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ios.calendar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FF7A4F61D1A7CB500B846E4 /* Build configuration list for PBXProject "ios.calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FF7A5261D1A7CB600B846E4 /* Debug */,
+				0FF7A5271D1A7CB600B846E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FF7A5281D1A7CB600B846E4 /* Build configuration list for PBXNativeTarget "ios.calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FF7A5291D1A7CB600B846E4 /* Debug */,
+				0FF7A52A1D1A7CB600B846E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FF7A52B1D1A7CB600B846E4 /* Build configuration list for PBXNativeTarget "ios.calendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FF7A52C1D1A7CB600B846E4 /* Debug */,
+				0FF7A52D1D1A7CB600B846E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FF7A52E1D1A7CB600B846E4 /* Build configuration list for PBXNativeTarget "ios.calendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FF7A52F1D1A7CB600B846E4 /* Debug */,
+				0FF7A5301D1A7CB600B846E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FF7A4F31D1A7CB500B846E4 /* Project object */;
+}
