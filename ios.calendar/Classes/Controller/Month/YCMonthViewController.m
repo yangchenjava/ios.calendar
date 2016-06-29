@@ -35,8 +35,6 @@
     // ios7 导航控制器切换影响UIScrollView布局的问题
     self.automaticallyAdjustsScrollViewInsets = NO;
 
-    self.view.backgroundColor = YC_COLOR(212, 212, 212);
-
     self.centerIndex = 0;
 
     // 标题按钮
