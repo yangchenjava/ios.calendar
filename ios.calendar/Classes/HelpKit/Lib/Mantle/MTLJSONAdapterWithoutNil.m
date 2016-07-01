@@ -1,6 +1,6 @@
 //
 //  MTLJSONAdapterWithoutNil.m
-//  ios_test_22_weibo
+//  ios_utils
 //
 //  Created by yangc on 16-4-28.
 //  Copyright (c) 2016年 yangc. All rights reserved.
