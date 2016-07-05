@@ -15,7 +15,7 @@
     YCTitleButton *titleButton = [YCTitleButton buttonWithType:UIButtonTypeCustom];
     titleButton.titleLabel.font = [UIFont systemFontOfSize:21];
     CGSize size = [title sizeWithFont:titleButton.titleLabel.font size:CGSizeMake(MAXFLOAT, MAXFLOAT)];
-    titleButton.bounds = (CGRect){CGPointZero, size};
+    titleButton.bounds = CGRectMake(0, 0, size.width + 10, size.height);
     [titleButton setTitle:title forState:UIControlStateNormal];
     [titleButton setTitleColor:YC_COLOR(13, 79, 139) forState:UIControlStateNormal];
     return titleButton;

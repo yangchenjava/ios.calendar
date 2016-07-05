@@ -19,6 +19,7 @@
 		0FE3F3B11D212F3C001E5D24 /* YCDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3F3B01D212F3C001E5D24 /* YCDatePicker.m */; };
 		0FE3F3B91D2163F4001E5D24 /* YCAlertControllerBiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3F3B81D2163F4001E5D24 /* YCAlertControllerBiz.m */; };
 		0FE3F3BC1D2217D1001E5D24 /* YCMonthPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3F3BB1D2217D1001E5D24 /* YCMonthPicker.m */; };
+		0FE3F4601D2B9EFB001E5D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FE3F45E1D2B9EFB001E5D24 /* LaunchScreen.storyboard */; };
 		0FF7A50B1D1A7CB500B846E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF7A50A1D1A7CB500B846E4 /* Assets.xcassets */; };
 		0FF7A5191D1A7CB600B846E4 /* ios_calendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A5181D1A7CB600B846E4 /* ios_calendarTests.m */; };
 		0FF7A5241D1A7CB600B846E4 /* ios_calendarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7A5231D1A7CB600B846E4 /* ios_calendarUITests.m */; };
@@ -85,6 +86,7 @@
 		0FE3F3B81D2163F4001E5D24 /* YCAlertControllerBiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCAlertControllerBiz.m; sourceTree = "<group>"; };
 		0FE3F3BA1D2217D1001E5D24 /* YCMonthPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMonthPicker.h; sourceTree = "<group>"; };
 		0FE3F3BB1D2217D1001E5D24 /* YCMonthPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMonthPicker.m; sourceTree = "<group>"; };
+		0FE3F45F1D2B9EFB001E5D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FF7A4FB1D1A7CB500B846E4 /* ios.calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF7A50A1D1A7CB500B846E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FF7A50F1D1A7CB500B846E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 			children = (
 				0FF7A50A1D1A7CB500B846E4 /* Assets.xcassets */,
 				0FF7A50F1D1A7CB500B846E4 /* Info.plist */,
+				0FE3F45E1D2B9EFB001E5D24 /* LaunchScreen.storyboard */,
 				0FF7A56D1D1B794B00B846E4 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
@@ -611,6 +614,7 @@
 				0FE3F3A71D1E2A54001E5D24 /* YCMonthItemView.xib in Resources */,
 				0FF7A50B1D1A7CB500B846E4 /* Assets.xcassets in Resources */,
 				0FE3F3A21D1D064C001E5D24 /* YCDayItemView.xib in Resources */,
+				0FE3F4601D2B9EFB001E5D24 /* LaunchScreen.storyboard in Resources */,
 				0FF7A5671D1ADBF600B846E4 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -749,6 +753,17 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		0FE3F45E1D2B9EFB001E5D24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FE3F45F1D2B9EFB001E5D24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		0FF7A5261D1A7CB600B846E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -839,7 +854,6 @@
 			baseConfigurationReference = 6DCAB177F786660EFFFEF48D /* Pods-ios.calendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "${SRCROOT}/ios.calendar/PrefixHeader.pch";
@@ -856,7 +870,6 @@
 			baseConfigurationReference = D744AB158B208E8210B569CB /* Pods-ios.calendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "${SRCROOT}/ios.calendar/PrefixHeader.pch";
