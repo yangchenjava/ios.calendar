@@ -30,4 +30,25 @@
  */
 - (instancetype)imageWithRoundRect:(CGSize)size radius:(CGFloat)radius;
 
+/**
+ *  @author yangc, 16-07-08 09:07:48
+ *
+ *  改变图片颜色(非渐变)
+ */
+- (instancetype)imageWithTintColor:(UIColor *)tintColor;
+
+/**
+ *  @author yangc, 16-07-08 09:07:48
+ *
+ *  改变图片颜色(含渐变，灰色无效)
+ */
+- (instancetype)imageWithGradientTintColor:(UIColor *)tintColor;
+
+/**
+ *  @author yangc, 16-07-08 09:07:48
+ *
+ *  根据CGBlendMode改变图片颜色
+ */
+- (instancetype)imageWithTintColor:(UIColor *)tintColor blendMode:(CGBlendMode)blendMode;
+
 @end

@@ -10,6 +10,12 @@
 
 @interface UIImageView (SDWebImageCategory)
 
-- (void)sd_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder radius:(CGFloat)radius;
+- (void)sd_setImageCircleWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder;
+
+- (void)sd_setImageCircleWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder completed:(SDWebImageCompletionBlock)completedBlock;
+
+- (void)sd_setImageRoundRectWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder radius:(CGFloat)radius;
+
+- (void)sd_setImageRoundRectWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder radius:(CGFloat)radius completed:(SDWebImageCompletionBlock)completedBlock;
 
 @end
